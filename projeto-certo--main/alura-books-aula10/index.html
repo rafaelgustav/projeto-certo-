@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transamerica venda e revenda de motos</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Front-end</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Infraestrutura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe onde comprar ou vender a sua moto?</h2>
+    <p class="banner__texto">Não? Então venha para a transamérica - venda e compra de motos</p>
+    <input type="search" class="banner__pesquisa" placeholder="Você quer vender ou comprar uma moto">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">motos a venda </h2>
+
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Veja nossas motos abaixo</h3>
+          <h2 class="descrição__titulo-livro">Marcas</h2>
+          <p class="descrição__texto">
+            Honda,Bmw,Yamaha,Kawazaki.
+          </p>
+        </div>
+        <img src="" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/Yamaha-recall.jpg"
+            alt="Livro sobre apache kafka e spring boot da alura books">
+          <p class="p-1">xj6 ano 2016 preço 44000
+          </p>
+
+          </div>
+
+        <div class="swiper-slide"><img src="img/Screenshot_20230829_222412_Gallery-1024x917.jpg"
+            alt="Livro sobre liderança em design da alura books">
+<p><class="p-1">Titan 160 ano 2024 preço 15000</p>
+        </div>
+
+        <div class="swiper-slide"><img src="img/2024-kawasaki-Ninja-ZX-4RR-static-left-side.jpg"
+            alt="Livro sobre javascript assertivo da alurabooks">
+            <p><class="p-1">Ninja 400 ano 2024 preço 56000 </p>
+        </div>
+
+        <div class="swiper-slide"><img src="img/photo_5186340904942807621_x.jpg" alt="Livro Guia front end">
+          <p><class="p-1">Bmw gs ano 2024 preço 130000</p>
+        </div>
+
+        <div class="swiper-slide"><img src="img/maxresdefault.jpg" alt="Livro sobre portugol">
+        <p>cbr 1000 rr ano 2024 preço 193500</p>
+        </div>
+        <div class="swiper-slide"><img src="img/2020-triumph-tiger-900-capa.jpg" alt="livro sobre acessibilidade">
+        <p>tayger 1000 nano 2024 preço 98990 </p>
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
