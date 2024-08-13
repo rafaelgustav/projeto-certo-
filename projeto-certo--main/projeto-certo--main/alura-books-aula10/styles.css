@@ -20,28 +20,10 @@ body {
 
 
 
-.card {
+.card{
     background-image: url(img/yamaha-motor-corporation-vector-logo.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.82;
-}
-.card-2{
-    display: none;
-}
-
-@media screen and (min-width: 1024px) {
-    .card {
-
-        display: none;
-        
-    }
-    .card-2 {
-        background-image: url(img/yamaha-motor-corporation-vector-logo.png);
-        background-size: 50%;
-        background-repeat: no-repeat;
-        background-position: center;
-        opacity: 0.82;
-    }
 }

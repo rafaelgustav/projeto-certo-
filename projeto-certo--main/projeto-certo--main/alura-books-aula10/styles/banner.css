@@ -37,12 +37,33 @@
 @media screen and (min-width: 1024px){
 
 .banner__titulo{
-    font-size: 45px;
+    font-size: 55px;
     color:blue ;
+
 }
+
+}
+@media screen and (min-width: 1024px){
 .banner__texto{
-    font-size: 24px;
+    font-size: 45px;
     color: blue;
+}
+
+
+}
+@media screen and (min-width: 1024px){
+.banner__pesquisa{
+    color: blue;
+}
+
+.bit{
+font-size: 50px;
+color: red;
+}
+.bit1{
+    font-size: 25px;
+    color:blue;
+
 }
 
 }

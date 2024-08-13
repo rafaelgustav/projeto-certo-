@@ -78,7 +78,15 @@
     margin: 0 0.5em;
 }
 
+.bit1{
+
+    display: none;
+}
+
 @media screen and (min-width: 1024px){
 
-    
+.bit1{
+    display:block;
 }
+    
+    }
